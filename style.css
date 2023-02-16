@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+  background: rgb(236, 236, 236);
+  background: linear-gradient(
+    90deg,
+    rgba(236, 236, 236, 1) 25%,
+    rgba(138, 141, 141, 0.5943627450980392) 100%
+  );
+}
+
+header {
+  background: rgba(220, 220, 220, 0.649);
+  padding: 20px;
+  text-decoration: none;
+  border-bottom: 1px solid #cccccc;
+}
+
+header h1 {
+  color: #b00020;
+}
+
+header p {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+
+div {
+  padding: 30px;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.367);
+}
+
+div h2,
+p {
+  margin-bottom: 20px;
+}
+
+div input {
+  height: 20px;
+  display: block;
+  margin: 10px auto;
+  padding: 5px;
+  text-align: center;
+  border-radius: 5px;
+  border: 1px solid grey;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6be);
+  box-shadow: 7px 7px 14px #ebebebbe, -7px -7px 14px #ffffffa3;
+}
+
+div button {
+  margin-bottom: 20px;
+  padding: 8px;
+  border-radius: 5px;
+  border: 1px solid grey;
+  color: #ffffff;
+  font-weight: bold;
+  background: #b00020;
+  box-shadow: 7px 7px 14px #cccccc, -7px -7px 14px #ffffffc1;
+}
+
+div button:hover {
+  transform: scale(1.1);
+  transition: all 0.5s;
+}
+
+.resultado {
+  display: inline;
+  border: 1px solid black;
+  padding: 5px;
+  background: linear-gradient(145deg, #ffffff, #e6e6e6be);
+  box-shadow: 7px 7px 14px #ebebebbe, -7px -7px 14px #ffffffa3;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.rodape {
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.rodape p {
+  color: #5c5c5c;
+  padding-top: 10px;
+  font-size: 14px;
+  margin-bottom: 3px;
+}
+
+.rodape img {
+  width: 25px;
+  padding-bottom: 5px;
+}
+
+@media (max-width: 769px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  div h2 {
+    font-size: 18px;
+  }
+
+  div p {
+    font-size: 14px;
+  }
+
+  div li {
+    font-size: 14px;
+  }
+
+  .resultado {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+  }
+
+  .rodape p {
+    font-size: 12px;
+    margin-bottom: 5px;
+  }
+
+  .rodape img {
+    width: 20px;
+  }
+}

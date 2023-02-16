@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Backlog Semana 3 - Floripa Mais Tec</title>
+    <link rel="icon" type="svg" href="/imagens/icon.svg">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>&#9889 Backlog Semana 3 - Floripa Mais Tec &#9889</h1>
+      <p>
+        Conjunto de atividades propostas para o curso de FullStack <br><br><strong>Semana 3</strong> 
+      </p>
+    </header>
+
+    <main>
+      <div>
+        <h2>[M1S03] Ex 1 - Par ou ímpar</h2>
+        <p>
+          Escreva um programa que recebe um valor numérico pelo teclado e
+          imprime no console se o número é par ou ímpar.
+        </p>
+        <form>
+          <input
+            id="inputNumParImpar"
+            type="number"
+            placeholder="Digite o valor número aqui"
+          />
+          <button onclick="verificaNumParImpar()">Verificar no Console</button>
+        </form>
+      </div>
+
+      <div>
+        <h2>[M1S03] Ex 2 - Grupos de Idade</h2>
+        <p>
+          Escreva um programa que, com base em uma idade fornecida, classifica a
+          pessoa nos grupos abaixo:
+        </p>
+        <li>Criança: 0 a 12 anos;</li>
+        <li>Adolescente: 13 a 17 anos;</li>
+        <li>Adulto: 18 a 65 anos;</li>
+        <li>Sênior: 66 anos ou mais;</li>
+        <p><br>
+          Idades negativas ou acima de 110 anos devem ser consideradas como
+          inválidas.
+        </p>
+        <form>
+          <input
+            id="inputIdade"
+            type="number"
+            placeholder="Informe a idade aqui"
+          />
+          <button onclick="verificaClassificacaoIdade()">
+            Ver Classificação
+          </button>
+        </form>
+        <p id="classificacaoIdade" class="resultado"></p>
+      </div>
+
+      <div>
+        <h2>[M1S03] Ex 3 - A ponte</h2>
+        <p>
+          A secretaria de obras de uma prefeitura local está reformando uma das
+          pontes da cidade após alguns desgastes naturais. Após vários testes, o
+          trânsito local foi liberado com algumas condições específicas: Nenhum
+          carro que pese mais de 1.500kg e tenha mais de 5 metros de comprimento
+          poderá passar pela ponte. Faça um programa que leia as informações e
+          alerte se o carro pode ou não passar pela ponte.
+        </p>
+
+        <form>
+          <input
+            id="inputPeso"
+            type="number"
+            placeholder="Informe o peso aqui"
+          />
+          <input
+            id="inputComprimento"
+            type="number"
+            placeholder="Informe o comprimento aqui"
+          />
+          <button onclick="verificaPermissao()">Verificar Permissão</button>
+        </form>
+        <p id="outputPermissao" class="resultado"></p>
+      </div>
+
+      <div>
+        <h2>[M1S03] Ex 4 - Classificação</h2>
+        <p>
+          Uma empresa está classificando os pedidos de venda de suas equipes
+          para diferenciar a forma de bonificação. Caso o valor do pedido seja
+          até 10.000,00 a classificação do pedido será bronze. Caso seja entre
+          10.000,00 e 50.000,00 a classificação será prata. Caso seja 100.000,00
+          a 500.000,00 a classificação será ouro. Acima de 500.000,00 a
+          classificação será platinum. Escreva o programa que receba as
+          informações de valor do pedido e imprima sua classificação.
+        </p>
+        <form>
+          <input
+            id="inputValorVenda"
+            type="number"
+            placeholder="Informe o valor aqui"
+          />
+          <button onclick="verificaClassificacaoPedido()">
+            Verificar Classificação
+          </button>
+        </form>
+        <p id="outputClassificacaoBonificacao" class="resultado"></p>
+      </div>
+
+      <div>
+        <h2>[M1S03] Ex 5 - Valida Senha</h2>
+        <p>
+          Escreva um programa que verifique a validade de uma senha fornecida
+          pelo usuário. A senha válida é o número 1234. Devem ser impressas as
+          seguintes mensagens: ACESSO PERMITIDO caso a senha seja válida. ACESSO
+          NEGADO caso a senha seja inválida.
+        </p>
+        <form>
+          <input
+            id="inputSenha"
+            type="password"
+            placeholder="Informe a senha aqui"
+          />
+          <button onclick="verificaSenha()">Verificar Senha</button>
+        </form>
+        <p id="outputValidacaoSenha"></p>
+      </div>
+
+      <div>
+        <h2>[M1S03] Ex 6 - Qual é o maior?</h2>
+        <p>
+          Escreva um programa para ler 2 valores (considere que não serão
+          informados valores iguais) e escrever o maior deles.
+        </p>
+        <form>
+          <input
+            id="inputNum1"
+            type="numer"
+            placeholder="Informe o primeiro número"
+          />
+          <input
+            id="inputNum2"
+            type="numer"
+            placeholder="Informe o segundo número"
+          />
+          <button onclick="verificaMaior()">Verificar Maior</button>
+        </form>
+        <p id="outputMaiorNum" class="resultado"></p>
+      </div>
+
+      <footer class="rodape">
+        <p>Desenvolvido por <strong><br> Andrezza de Melo Troian</strong></p>
+        <a href="https://www.linkedin.com/in/andrezza-de-melo-troian/"><img src="https://cdn-icons-png.flaticon.com/512/145/145807.png" width="30px" alt=""></a>
+    </footer>
+
+    </main>
+    <script src="/js/scriptEx1.js"></script>
+    <script src="/js/scriptEx2.js"></script>
+    <script src="/js/scriptEx3.js"></script>
+    <script src="/js/scriptEx4.js"></script>
+    <script src="/js/scriptEx5.js"></script>
+    <script src="/js/scriptEx6.js"></script>
+  </body>
+</html>
